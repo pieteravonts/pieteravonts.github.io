@@ -13,7 +13,14 @@
     window.onload = function() {
       new ABCJS.Editor("abc", { canvas_id: "paper",
         warnings_id: "warnings",
-        abcjsParams: {}
+        abcjsParams: {
+          tablature: [{
+            instrument: 'melodeon',
+            label: '',
+            tuning: ['G', 'C5'],
+            capo: 0
+          }]
+        }
       });
     }
 
